@@ -1,0 +1,374 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: lighter;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+* {
+  position: relative;
+  z-index: 10;
+}
+
+a {
+  cursor: pointer;
+}
+
+html, body, #container {
+  width: 100%;
+  height: 100%;
+  display: box;
+  display: -webkit-box;
+  background: inherit;
+  overflow: hidden;
+}
+
+body {
+  background: url("/image/man-and -lake.jpg") no-repeat 50% fixed;
+  background-size: cover;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #F26964;
+  text-align: center;
+  z-index: 9999;
+}
+
+#header-title {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 8px 10px 4px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  margin: 4px auto;
+  border-radius: 4px;
+}
+
+#create-todo-btn, #sort-btn {
+  position: fixed;
+  top: 0;
+  width: 20px;
+  height: 20px;
+}
+
+#sort-btn {
+  left: 0;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 12px 10px 0;
+}
+
+#create-todo-btn {
+  right: 0;
+  background: url("/image/plus.png");
+  opacity: 0.6;
+  background-size: 20px;
+  margin: 9px 10px 0;
+}
+
+.font-style {
+  font-family: 'Bad Script', cursive;
+}
+
+.h2 {
+  font-size: 16px;
+  padding: 6px 0 4px 6px;
+}
+
+#container {
+  background: inherit;
+}
+
+aside {
+  width: 25%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#memo-wp {
+  width: 50%;
+  height: 100%;
+  background: inherit;
+}
+
+#memo {
+  position: relative;
+  top: -200%;
+  background: inherit;
+  width: 95%;
+  margin: 50px auto 0;
+  border-radius: 2px;
+  border: 8px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  font-size: 1.4rem;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+#memo:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(5px);
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: url(#blur);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='6');
+  z-index: 1;
+}
+
+svg {
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+#close-btn {
+  position: absolute;
+  top: -2px;
+  right: 10px;
+  color: #F26964;
+  z-index: 20;
+}
+
+#memo-title {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  border: none;
+  font-size: 24px;
+  color: #444;
+  padding: 10px 0;
+}
+#memo-title:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+#memo-area {
+  resize: none;
+  overflow: auto;
+  width: 99.4%;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  border: none;
+}
+#memo-area:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+#btn-area {
+  position: fixed;
+  bottom: -250px;
+  left: 0;
+  width: 100%;
+}
+
+aside {
+  overflow: auto;
+}
+
+#todo-lists-area li {
+  width: 96%;
+  margin: 2px auto;
+  padding: 12px 0 12px 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+  cursor: pointer;
+}
+#todo-lists-area li p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#todo-lists-area li:first-child {
+  margin: 42px auto 2px;
+}
+#todo-lists-area li time {
+  padding-right: 10px;
+}
+
+#complete-todo-lists-area li {
+  width: 96%;
+  margin: 2px auto;
+  padding: 12px 0 12px 4px;
+  background-color: rgba(38, 174, 144, 0.4);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  cursor: pointer;
+}
+#complete-todo-lists-area li:first-child {
+  margin: 42px auto 2px;
+}
+#complete-todo-lists-area li time {
+  padding-right: 10px;
+}
+
+#all-delete-btn {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  margin-left: -48%;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  margin-left: -40px;
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.25em;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.btn-square {
+  border-radius: 4px;
+  width: 96%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.btn-blue {
+  background-color: #1253A4;
+  color: #FFF;
+}
+
+.btn-green {
+  background-color: #26AE90;
+  color: #FFF;
+}
+
+.btn-red {
+  background-color: #F26964;
+  color: #FFF;
+}
+
+.btn-orange {
+  background-color: #C09853;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=index.css.map */

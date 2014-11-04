@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="ja">
+    <head>
+    <meta charset="UTF-8">
+    <title>todo</title>
+    <link href='http://fonts.googleapis.com/css?family=Bad+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+    <header id="header">
+        <a id="sort-btn">▼</a>
+        <a href="/">
+            <h1 id="header-title" class="font-style">todo</h1>
+        </a>
+        <a id="create-todo-btn"></a>
+    </header>
+    <div id="container">
+        <aside>
+            <ul id="todo-lists-area">
+            </ul>
+        </aside>
+        <div id="memo-wp">
+            <div id="memo">
+                <a id="close-btn">×</a>
+                <h2 class="font-style h2">TITLE</h2>
+                <input id="memo-title" type="text" placeholder="please,enter title">
+                <h2 class="font-style h2">MEMO</h2>
+                <textarea id="memo-area"></textarea>
+            </div>
+            <div id="btn-area">
+                <ul>
+                    <li><a id="regist-btn" class="btn-circle btn-blue font-style btn">Regist</a></li>
+                    <li><a id="edit-btn" class="btn-circle btn-orange font-style btn">Edit</a></li>
+                    <li><a id="cancel-btn" class="btn-circle btn-red font-style btn">Cancel</a></li>
+                    <li><a id="complete-btn" class="btn-circle btn-green font-style btn">Finish</a></li>
+                </ul>
+            </div>
+        </div>
+        <aside>
+            <ul id="complete-todo-lists-area">
+            </ul>
+            <a id="all-delete-btn" class="btn-square btn-red font-style btn" style="display: none;">all delete</a>
+        </aside>
+    </div>
+    </body>
+</html>
